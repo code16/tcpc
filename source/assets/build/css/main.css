@@ -1,0 +1,19 @@
+body {
+  background: #0000fe;
+  color: #fff;
+  font-family: Helvetica, Arial, sans-serif;
+}
+
+a {
+  color: #fff;
+  text-decoration: underline;
+}
+
+@media (min-width: 768px) {
+  img.tcpc {
+    position: absolute;
+    top: 40%;
+    left: 50%;
+    margin-left: -200px;
+  }
+}
