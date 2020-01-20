@@ -22,7 +22,7 @@
                         <h4 class="text-center"><em>bientôt</em></h4>
                     </div>
                     <div class="col-md-3 d-none d-md-block">
-                        <h4 class="text-right"><a href="mailto:">contact</a></h4>
+                        <h4 class="text-right"><a href="mailto:contact@tcpc.fr">contact</a></h4>
                     </div>
                 </div>
             </header>
@@ -35,7 +35,7 @@
                         <h4><em>bientôt</em></h4>
                     </div>
                     <div class="col-6">
-                        <h4 class="text-right"><a href="mailto:">contact</a></h4>
+                        <h4 class="text-right"><a href="mailto:contact@tcpc.fr">contact</a></h4>
                     </div>
                 </div>
             </footer>
