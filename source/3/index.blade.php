@@ -12,10 +12,11 @@
 <div class="container h-100">
 
     <div class="h-100 d-flex align-items-center justify-content-center">
-        <video autoplay playsinline width="100%">
+        <video controls width="100%" class="d-block d-md-none">
             <source src="https://80ans.s3.eu-west-3.amazonaws.com/TCPC/saluta.m4v" type="video/mp4">
-
-            Sorry, your browser doesn't support embedded videos.
+        </video>
+        <video autoplay playsinline width="100%" class="d-none d-md-block">
+            <source src="https://80ans.s3.eu-west-3.amazonaws.com/TCPC/saluta.m4v" type="video/mp4">
         </video>
     </div>
 
