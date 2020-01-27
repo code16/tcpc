@@ -9,17 +9,19 @@
     <link rel="stylesheet" href="{{ mix('css/main.css', 'assets/build') }}">
 </head>
 <body class="h-100">
-<div class="container h-100">
-
-    <div class="h-100 d-flex align-items-center justify-content-center">
-        <video controls width="100%" class="d-block d-md-none">
-            <source src="https://80ans.s3.eu-west-3.amazonaws.com/TCPC/saluta.m4v" type="video/mp4">
-        </video>
-        <video autoplay playsinline width="100%" class="d-none d-md-block">
-            <source src="https://80ans.s3.eu-west-3.amazonaws.com/TCPC/saluta.m4v" type="video/mp4">
-        </video>
+    <div id="app" class="container h-100">
+        <div class="h-100 d-flex align-items-center justify-content-center ">
+            <div class="position-relative">
+                <video playsinline width="100%" preload="auto" style="opacity: 0">
+                    <source src="https://80ans.s3.eu-west-3.amazonaws.com/TCPC/saluta-3.mp4" type="video/mp4">
+                </video>
+                <template v-if="loading">
+                    <div class="loading">chargement...</div>
+                </template>
+                <div class="play" role="button" tabindex="0" @click="handlePlayClicked"></div>
+            </div>
+        </div>
     </div>
-
-</div>
+    <script src="{{ mix('js/main.js', 'assets/build') }}"></script>
 </body>
 </html>
