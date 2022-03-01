@@ -8,9 +8,6 @@ npm-debug.log
 yarn-error.log
 .DS_Store
 
-# Optional ignores
-# /build_staging/
-# /build_production/
-# /source/assets/build/css/
-# /source/assets/build/fonts/
-# /source/assets/build/js/
+/build_staging/
+/build_production/
+/source/assets/build/
