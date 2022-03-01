@@ -1,14 +1,13 @@
+@import "variables";
 @import '~bootstrap/scss/bootstrap';
-
+@import "ecwid";
 
 body {
-  background: #0000fe;
-  color:#fff;
+  color: #222;
   font-family: Helvetica, Arial, sans-serif;
 }
 
 a {
-  color: #fff;
   text-decoration: underline;
 }
 
