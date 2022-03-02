@@ -51,10 +51,13 @@
     </template>
 
     <template x-data="shopElement">
-        <div class="ec-cart__shopping text-end">
-            <a class="form-control__button ec-link d-inline-block w-auto" href="/">
-                Mettre à jour le panier
-            </a>
+        <div class="ec-cart__shopping ec-cart-shopping">
+            <slot></slot>
+            <div class="text-end">
+                <a class="form-control__button ec-link d-inline-block w-auto" href="/">
+                    Mettre à jour le panier
+                </a>
+            </div>
         </div>
     </template>
 @endsection
@@ -78,7 +81,8 @@
                         setTimeout(() => {
                             const elements = [...document.querySelectorAll(`.${root.classList.item(0)}`)];
                             elements.forEach(el => {
-                                Alpine.morph(el, this.$el.innerHTML);
+                                const html = this.$el.innerHTML.replace(/\s*<slot><\/slot>\s*/, el.innerHTML);
+                                Alpine.morph(el, html);
                             });
                         }, 50);
                     });
