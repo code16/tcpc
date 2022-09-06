@@ -8,9 +8,9 @@ npm-debug.log
 yarn-error.log
 .DS_Store
 
-# Optional ignores
-# /build_staging/
-# /build_production/
-# /source/assets/build/css/
-# /source/assets/build/fonts/
-# /source/assets/build/js/
+# to deploy on netlify which have php 8.0
+composer.lock
+
+/build_staging/
+/build_production/
+/source/assets/build/
