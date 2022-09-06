@@ -5,7 +5,7 @@ mix.setPublicPath('source/assets/build');
 
 mix.jigsaw()
     .js('source/_assets/js/app.js', 'js')
-    .sass('source/_assets/scss/app.scss', 'css', { implementation: require('node-sass') })
+    .sass('source/_assets/scss/app.scss', 'css', { implementation: require('sass-embedded') })
     .options({
         processCssUrls: false,
     })
