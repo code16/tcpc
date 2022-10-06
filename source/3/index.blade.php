@@ -13,7 +13,7 @@
         <div class="h-100 d-flex align-items-center justify-content-center">
             <div class="position-relative">
                 <video width="100%" preload="auto" style="opacity: 0" v-cloak>
-                    <source src="https://80ans.s3.eu-west-3.amazonaws.com/TCPC/saluta-3.mp4" type="video/mp4">
+                    <source src="https://kava-prod.s3.eu-west-3.amazonaws.com/saluta-1.mp4" type="video/mp4">
                 </video>
                 <div v-show="loading" class="loading">chargement...</div>
                 <div class="play" role="button" tabindex="0" @click="handlePlayClicked" v-cloak></div>
