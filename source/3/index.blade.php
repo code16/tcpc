@@ -13,7 +13,7 @@
         <div class="h-100 d-flex align-items-center justify-content-center ">
             <div class="position-relative">
                 <video playsinline width="100%" preload="auto" style="opacity: 0">
-                    <source src="https://80ans.s3.eu-west-3.amazonaws.com/TCPC/saluta-3.mp4" type="video/mp4">
+                    <source src="https://kava-prod.s3.eu-west-3.amazonaws.com/saluta-1.mp4" type="video/mp4">
                 </video>
                 <template v-if="loading">
                     <div class="loading">chargement...</div>
