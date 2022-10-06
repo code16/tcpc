@@ -1,14 +1,21 @@
+@import "variables";
+@import "root";
 @import '~bootstrap/scss/bootstrap';
+@import "ecwid";
 
 
 body {
-  background: #0000fe;
-  color:#fff;
-  font-family: Helvetica, Arial, sans-serif;
+  color:  var(--body-color);
+  //font-family: Arial, sans-serif;
+  font-weight: var(--body-font-weight);
+}
+
+h1 {
+  font-size: 2.5rem!important;
+  color: var(--bs-primary)!important;
 }
 
 a {
-  color: #fff;
   text-decoration: underline;
 }
 
