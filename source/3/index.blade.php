@@ -8,7 +8,7 @@
     <div class="container d-flex align-items-center justify-content-center min-vh-100">
         <div x-data="video()" class="position-relative">
             <video width="100%" preload="auto" style="opacity: 0" x-cloak>
-                <source src="https://80ans.s3.eu-west-3.amazonaws.com/TCPC/saluta-3.mp4" type="video/mp4">
+                <source src="https://kava-prod.s3.eu-west-3.amazonaws.com/saluta-1.mp4" type="video/mp4">
             </video>
             <div class="loading" x-show="loading">
                 chargement...
