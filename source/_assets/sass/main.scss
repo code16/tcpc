@@ -4,6 +4,10 @@ body {
   font-family: Helvetica, Arial, sans-serif;
 }
 
+[v-cloak] {
+  display: none;
+}
+
 a {
   color: #fff;
   text-decoration: underline;

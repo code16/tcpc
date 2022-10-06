@@ -10,15 +10,13 @@
 </head>
 <body class="h-100">
     <div id="app" class="container h-100">
-        <div class="h-100 d-flex align-items-center justify-content-center ">
+        <div class="h-100 d-flex align-items-center justify-content-center">
             <div class="position-relative">
-                <video playsinline width="100%" preload="auto" style="opacity: 0">
+                <video width="100%" preload="auto" style="opacity: 0" v-cloak>
                     <source src="https://kava-prod.s3.eu-west-3.amazonaws.com/saluta-1.mp4" type="video/mp4">
                 </video>
-                <template v-if="loading">
-                    <div class="loading">chargement...</div>
-                </template>
-                <div class="play" role="button" tabindex="0" @click="handlePlayClicked"></div>
+                <div v-show="loading" class="loading">chargement...</div>
+                <div class="play" role="button" tabindex="0" @click="handlePlayClicked" v-cloak></div>
             </div>
         </div>
     </div>
